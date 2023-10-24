@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8edb512665.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <title>GamenIndonesia</title>
+</head>
+<body>
+    <header class="headbackground">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="img\Gamen LOGO -03.png"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html"><h4>Home</h4></a></li>
+                    <li><a href="products.html"><h4>Products</h4></a></li>
+                    <li><a href="software.html"><h4>Software</h4></a></li>
+                    <li><a href="aboutus.html"><h4>About Us</h4></a></li>
+                    <li><a href="contact.html"><h4>Contact</h4></a></li>
+                    <li><a href="cart.html "><i id="moveleft"class="fa fa-solid fa-cart-shopping"></i></a></li>
+                    <li><i id="mobile" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i id="mobile" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="slider">
+            <div class="sliderWrapper">
+                <!--radio button starts-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!--image slider starts-->
+                <div class="sliderItem first" id="image1">
+                    <img class="sliderimg1" src="img\Untitled-1.png">
+                    <h1 class="slidertitle">NEW</br> RELEASE</h1>
+                    <div class="slidebg"></div>
+                    <button class="buybutton" onclick="window.location.href='singleproduct.html';">Buy Now</button>
+                </div>
+                <div class="sliderItem" id="image2">
+                    <img class="sliderimg" src="img\1cae75_ae798d6a2112419690c3f12e263cc031~mv2.png">
+                    <h1 class="slidertitle">TITAN</h1>
+                    <p class="sliderpar">Lorem ipsum dolor sit amet, </br> sed do eiusmod tempor incididunt ut</br>labore et dolore magna aliqua.</p>
+                    <div class="slidebg"></div>
+                    <button class="buybutton" onclick="window.location.href='singleproduct.html';">Buy Now</button>
+                </div>
+                <div class="sliderItem" id="image3">
+                    <img class="sliderimg" src="img\1cae75_ef014fd053d347439e7644156655c7af~mv2.png">
+                    <h1 class="slidertitle">GH2100</h1>
+                    <p class="sliderpar">Lorem ipsum dolor sit amet, </br> sed do eiusmod tempor incididunt ut</br> labore et dolore magna aliqua.</p>
+                    <div class="slidebg"></div>
+                    <button class="buybutton" onclick="window.location.href='singleproduct.html';">Buy Now</button>
+                </div>
+                <!--automatic nav starts-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--manual nav starts-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="background">
+            <div class="middle">
+                <img class="middleimg"src="img\Screenshot 2023-10-23 183633.png">
+                <img class="middleimg"src="img\Screenshot 2023-10-23 183702.png">
+            </div>
+            <div class="featuretext">
+                <h1 class="featuretitle">Gamen Indonesia Gaming Gear</h1>
+                <p class="featurepara">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="featurebutton">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="col-1">
+                <h3>USEFUL LINKS</h3>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Shop</a>
+            </div>
+            <div class="col-2">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <br>
+                    <button type="submit">SUBSRCIBE NOW</button>
+                </form>
+            </div>
+            <div class="col-3">
+                <h3>Contact</h3>
+                <p>123, ABC Road, DEF 3<br>South Jakarta, Jakarta, IDN</p>
+                <p>+62 1234567891</p>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
